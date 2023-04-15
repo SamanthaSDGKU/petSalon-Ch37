@@ -1,0 +1,10 @@
+body{
+    font-family: arial;
+}
+
+.student{
+    border:1px solid black;
+    width:200px;
+    background-color: #dedede;
+    padding:10px;
+}
