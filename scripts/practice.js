@@ -1,60 +1,17 @@
 console.log("Practice");
 let array = [];
 
-//object literal
-let student = {
-    name:"Felix",
-    age:25,
-    grades:[3.9,3.8,4.0],
-    address:{
-        country:"USA",
-        state:"Georgia",
-        city:"Atlanta"
-    }
+//object constructor
+function Student(n,a,g){
+    this.name = n;
+    this.age = a;
+    this.gender = g;
 }
 
-let student1 = {
-    name:"Mario",
-    age:20,
-    grades:[3.7,3.9,3.0],
-    address:{
-        country:"Mex",
-        state:"Baja California",
-        city:"Tijuana"
-    }
-}
+//creating a new obj
+let student = new Student("Felix",98,"Male");
+let student1 = new Student("Mario",98,"Male");
+let student2 = new Student("Rafael",98,"Male");
 
-let student2 = {
-    name:"Rafael",
-    age:21,
-    grades:[3.6,3.7,3.5],
-    address:{
-        country:"Mex",
-        state:"Baja California",
-        city:"Tijuana"
-    }
-}
-console.log(student,student1,student2);
-
-document.write(`
-<div class="student">
-    <p>Name: ${student.name}</p>
-    <p>Age: ${student.age}</p>
-    <p>Country: ${student.address.country}<p>
-</div>
-`);
-document.write(`
-<div class="student">
-    <p>Name: ${student1.name}</p>
-    <p>Age: ${student1.age}</p>
-    <p>Country: ${student1.address.country}<p>
-</div>
-`);
-document.write(`
-<div class="student">
-    <p>Name: ${student2.name}</p>
-    <p>Age: ${student2.age}</p>
-    <p>Country: ${student2.address.country}<p>
-</div>
-`);
+array.push(student,student1,student2);
 

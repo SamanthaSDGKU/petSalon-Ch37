@@ -11,26 +11,7 @@ let petSalon = {
         street:"Ave Univesity 262",
         zip:"22334"
     },
-    pets:[
-        {
-            name:"scooby",
-            age:60,
-            gender:"Male",
-            service:"Grooming"
-        },
-        {
-            name:"scrappy",
-            age:50,
-            gender:"Male",
-            service:"Vaccines"
-        },
-        {
-            name:"Speedy",
-            age:70,
-            gender:"Male",
-            service:"Nails cut"
-        }
-    ] 
+    pets:[] 
 }
 
 //challenge: create three pets using obj lit anonymous with the following properties:
